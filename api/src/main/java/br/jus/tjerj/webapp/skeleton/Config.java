@@ -4,10 +4,7 @@ import javax.sql.DataSource;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
 import org.springframework.boot.autoconfigure.condition.ConditionalOnJndi;
-import org.springframework.boot.web.server.WebServerFactoryCustomizer;
-import org.springframework.boot.web.servlet.server.ConfigurableServletWebServerFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
@@ -24,11 +21,5 @@ public class Config {
 		DataSource dataSource = dataSourceLookup.getDataSource("java:jboss/datasources/ExampleDS");
 		LOGGER.info("[DATASOURCE] java:jboss/datasources/ExampleDS");
 		return dataSource;
-	}
-	
-	@Bean
-	public WebServerFactoryCustomizer<ConfigurableServletWebServerFactory> webServerFactoryCustomizer() {
-		LOGGER.info("[BASE-URL] /api");
-	    return factory -> factory.setContextPath("/api");
-	}
+	}	
 }
