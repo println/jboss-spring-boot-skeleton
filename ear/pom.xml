@@ -1,52 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-   <modelVersion>4.0.0</modelVersion>
-   
-   <parent>
-      <artifactId>root</artifactId>
-      <groupId>br.jus.tjerj.webapp</groupId>
-      <version>${project.version}</version>
-   </parent>
-   
-   <artifactId>ear</artifactId>
-   <packaging>ear</packaging>
-   
-   <name>ear</name>
-   <description>JBoss EAP 7.1 Integration</description>
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
 
-   <dependencies>
-      <dependency>
-         <groupId>br.jus.tjerj.webapp</groupId>
-         <artifactId>api</artifactId>
-		 <version>${project.version}</version>
-         <type>war</type>
-      </dependency>            
-      <dependency>
-         <groupId>org.springframework.boot</groupId>
-         <artifactId>spring-boot-starter-web</artifactId>
-      </dependency>      
-   </dependencies>
+	<parent>
+		<artifactId>root</artifactId>
+		<groupId>br.jus.tjerj.webapp</groupId>
+		<version>${project.version}</version>
+	</parent>
 
-   <build>
-      <plugins>
-         <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-ear-plugin</artifactId>
-            <configuration>
-               <skinnyWars>true</skinnyWars>
-               <defaultJavaBundleDir>lib</defaultJavaBundleDir>
-               <modules>
-                  <webModule>
-                     <groupId>br.jus.tjerj.webapp</groupId>
-                     <artifactId>api</artifactId>
-                     <contextRoot>/api</contextRoot>
-                  </webModule>                 
-               </modules>
-            </configuration>
-         </plugin>
-      </plugins>
-   </build>
+	<artifactId>ear</artifactId>
+	<packaging>ear</packaging>
+
+	<name>ear</name>
+	<description>JBoss EAP 7.1 Integration</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>br.jus.tjerj.webapp</groupId>
+			<artifactId>api</artifactId>
+			<version>${project.version}</version>
+			<type>war</type>
+		</dependency>		
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-ear-plugin</artifactId>
+				<configuration>
+					<skinnyWars>true</skinnyWars>
+					<defaultJavaBundleDir>lib</defaultJavaBundleDir>
+					<modules>
+						<webModule>
+							<groupId>br.jus.tjerj.webapp</groupId>
+							<artifactId>api</artifactId>
+							<contextRoot>/api</contextRoot>
+						</webModule>
+					</modules>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 </project>
