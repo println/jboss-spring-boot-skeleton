@@ -5,22 +5,22 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<parent>
-		<artifactId>root</artifactId>
+		<artifactId>build</artifactId>
 		<groupId>br.jus.tjerj.webapp</groupId>
-		<version>${project.version}</version>
+		<version>${revision}</version>
 	</parent>
 
 	<artifactId>ear</artifactId>
 	<packaging>ear</packaging>
 
-	<name>ear</name>
+	<name>${appname} EAR</name>
 	<description>JBoss EAP 7.1 Integration</description>
 
 	<dependencies>
 		<dependency>
 			<groupId>br.jus.tjerj.webapp</groupId>
 			<artifactId>api</artifactId>
-			<version>${project.version}</version>
+			<version>${revision}</version>
 			<type>war</type>
 		</dependency>		
 	</dependencies>

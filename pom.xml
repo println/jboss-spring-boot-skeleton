@@ -5,11 +5,11 @@
 	<modelVersion>4.0.0</modelVersion>	
 
 	<groupId>br.jus.tjerj.webapp</groupId>
-	<artifactId>root</artifactId>
+	<artifactId>build</artifactId>
 	<packaging>pom</packaging>
-	<version>${project.version}</version>
+	<version>${revision}</version>
 
-	<name>skeleton</name>
+	<name>${appname} Builder</name>
 	<description>Web Application Spring-Boot/JBoss EAP 7.1</description>
 	
 	<organization>
@@ -26,7 +26,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-		<project.version>1.0.0.SNAPSHOT</project.version>
+		<appname>Skeleton</appname>
+		<revision>1.0.0.SNAPSHOT</revision>
+		<main.basedir>${basedir}</main.basedir>
 	</properties>
 
 	<modules>
@@ -42,11 +44,7 @@
 					<source>1.8</source>
 					<target>1.8</target>
 				</configuration>
-				<version>2.3.2</version>
 			</plugin>
 		</plugins>
 	</build>
-	
-	
-
 </project>
