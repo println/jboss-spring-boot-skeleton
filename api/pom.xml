@@ -62,15 +62,7 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-			</plugin>
-			<plugin>
-				<artifactId>maven-war-plugin</artifactId>
-				<configuration>
-					<packagingExcludes>
-						%regex[WEB-INF/lib/log4j-(?!over-slf4j).*.jar]
-					</packagingExcludes>
-				</configuration>
-			</plugin>
+			</plugin>			
 		</plugins>
 	</build>
 </project>

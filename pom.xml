@@ -45,6 +45,14 @@
 					<target>1.8</target>
 				</configuration>
 			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<packagingExcludes>
+						%regex[WEB-INF/lib/log4j-(?!over-slf4j).*.jar]
+					</packagingExcludes>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
