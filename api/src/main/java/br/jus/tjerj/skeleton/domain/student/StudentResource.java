@@ -19,16 +19,18 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 @RestController
+@RequestMapping("/api")
 public class StudentResource {
 
 	@Autowired
 	private StudentRepository studentRepository;
 
-	@GetMapping("/api/students")
+	@GetMapping("/students")
 	public List<Student> retrieveAllStudents() {
 		return studentRepository.findAll();
 	}
