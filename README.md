@@ -4,7 +4,7 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 
 ### FEATURES
 
-1. ✅ Integration to JBoss EAP 7.0.1 GA(Undertow container)
+1. ✅ Integration to JBoss EAP 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1)
 	1. ✅ DataSources
 	1. ✅ System Properties
 1. ❌ Legacy EJB	
