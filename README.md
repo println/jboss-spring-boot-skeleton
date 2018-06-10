@@ -4,7 +4,9 @@ The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR for
 
 ### Implemented FEATURES
 
-1. ✅ Integration to JBoss EAP 7.0.1 GA 
+1. ✅ Integration to JBoss EAP 7.0.1 GA
+	1. ✅ DataSources
+	1. ✅ System Properties
 1. ✅ Multiple SQL files
 1. ✅ Simulate Oracle DB on H2(memory)
     1. ✅ Support to SEQUENCE
@@ -17,11 +19,12 @@ The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR for
 		1. ✅ swagger
 		1. ❌ Maven's profile DEV
 	1. ❌ PROD
-		1. ✅ JBoss' DataSources
 		1. ❌ application-prod.properties
+		1. ✅ JBoss' configurations		
 		1. ❌ Maven's profile PROD
 1. ✅ JUnit 5
 	1. ✅ SpringExtension + Eclipse Runner
 	1. ✅ SpringExtension + Maven Runner
 	1. ✅ MockitoExtension
 	1. ✅ AssertJ
+1. ❌ CORS

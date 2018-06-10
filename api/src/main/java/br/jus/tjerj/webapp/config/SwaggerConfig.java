@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.config;
+package br.jus.tjerj.webapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

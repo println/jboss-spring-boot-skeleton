@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.config;
+package br.jus.tjerj.webapp.config;
 
 import javax.sql.DataSource;
 
@@ -12,9 +12,9 @@ import org.springframework.jdbc.datasource.lookup.JndiDataSourceLookup;
 
 @Configuration
 @Profile("prod")
-public class Config {
+public class JndiConfig {
 	
-	private static final Logger LOGGER = LoggerFactory.getLogger(Config.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(JndiConfig.class);
 
 	@Bean
 	@ConditionalOnJndi
