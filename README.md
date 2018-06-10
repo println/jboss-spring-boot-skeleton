@@ -1,8 +1,8 @@
 # spring-boot-jboss-skeleton
 
-The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format) on JBoss's environment.
+The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format) on JBoss's environment.
 
-### Implemented FEATURES
+### FEATURES
 
 1. ✅ Integration to JBoss EAP 7.0.1 GA(Undertow container)
 	1. ✅ DataSources
