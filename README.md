@@ -4,7 +4,7 @@ The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR for
 
 ### Implemented FEATURES
 
-1. ✅ Integration to JBoss EAP 7.0.1 GA
+1. ✅ Integration to JBoss EAP 7.0.1 GA(Undertow container)
 	1. ✅ DataSources
 	1. ✅ System Properties
 1. ✅ Multiple SQL files
