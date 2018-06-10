@@ -21,7 +21,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import br.jus.tjerj.skeleton.webapp.bind.annotation.RestApiController;
+import br.jus.tjerj.skeleton.webapp.utils.controller.RestApiController;
 
 @RestApiController
 public class StudentResource {

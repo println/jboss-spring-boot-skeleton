@@ -1,4 +1,4 @@
-package br.jus.tjerj.skeleton.webapp.exception;
+package br.jus.tjerj.skeleton.webapp.handlers;
 import java.util.Date;
 
 import org.springframework.http.HttpHeaders;
@@ -12,11 +12,12 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import br.jus.tjerj.skeleton.domain.student.StudentNotFoundException;
+import br.jus.tjerj.skeleton.webapp.utils.response.ExceptionResponse;
 
 
 @ControllerAdvice
 @RestController
-public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExceptionHandler {
+public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
   @ExceptionHandler(Exception.class)
   public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {

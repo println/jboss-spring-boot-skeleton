@@ -1,4 +1,4 @@
-package br.jus.tjerj.skeleton.webapp.bind.annotation;
+package br.jus.tjerj.skeleton.webapp.utils.controller;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
