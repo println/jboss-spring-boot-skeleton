@@ -1,6 +1,6 @@
 # spring-boot-jboss-skeleton
 
-The the goal of the Skeleton is deploy a Spring-Boot-Application 2+ on JBoss environment by a WAR package.
+The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format) on JBoss's environment.
 
 ### Implemented FEATURES
 
@@ -22,5 +22,5 @@ The the goal of the Skeleton is deploy a Spring-Boot-Application 2+ on JBoss env
 1. ✅ JUnit 5
 	1. ✅ SpringExtension + Eclipse Runner
 	1. ✅ SpringExtension + Maven Runner
-	1. ✅ Mockito + Test
+	1. ✅ MockitoExtension
 	1. ✅ AssertJ

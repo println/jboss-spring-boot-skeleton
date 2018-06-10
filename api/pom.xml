@@ -81,7 +81,7 @@
 			<artifactId>junit-jupiter-params</artifactId>
 			<scope>test</scope>
 		</dependency>
-		<dependency><!-- dependencia para funcionar no eclipse -->
+		<dependency><!-- Runner to eclipse test runner -->
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-runner</artifactId>
 			<version>${junit-platform.version}</version>
