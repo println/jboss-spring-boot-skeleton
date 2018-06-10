@@ -17,6 +17,7 @@ The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR for
 		1. ✅ swagger
 		1. ❌ Maven's profile DEV
 	1. ❌ PROD
+		1. ✅ JBoss' DataSources
 		1. ❌ application-prod.properties
 		1. ❌ Maven's profile PROD
 1. ✅ JUnit 5
