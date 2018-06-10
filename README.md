@@ -1,6 +1,6 @@
 # spring-boot-jboss-skeleton
 
-The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format) on JBoss's environment.
+The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format) on JBoss' environment.
 
 ### FEATURES
 
@@ -11,11 +11,11 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 1. ✅ Multiple SQL files
 1. ✅ Simulate Oracle DB on H2(memory)
     1. ✅ Support to SEQUENCE
-    1. ✅ Support to SCHEME
-	1. ✅ Hibernate ddl-create from classes
+    1. ✅ Support to SCHEME	
 1. ❌ DEV and PROD environment
     1. ❌ DEV
 		1. ✅ application-dev.properties
+		1. ✅ Hibernate ddl-create from classes
 		1. ✅ data-h2.sql and script-h2.sql(schema)
 		1. ✅ swagger
 		1. ❌ Maven's profile DEV
