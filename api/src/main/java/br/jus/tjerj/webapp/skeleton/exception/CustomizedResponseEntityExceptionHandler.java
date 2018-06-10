@@ -22,14 +22,14 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
   public final ResponseEntity<Object> handleAllExceptions(Exception ex, WebRequest request) {
     ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
         request.getDescription(false));
-    return new ResponseEntity(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
+    return new ResponseEntity<>(exceptionResponse, HttpStatus.INTERNAL_SERVER_ERROR);
   }
 
   @ExceptionHandler(StudentNotFoundException.class)
   public final ResponseEntity<Object> handleUserNotFoundException(StudentNotFoundException ex, WebRequest request) {
     ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), ex.getMessage(),
         request.getDescription(false));
-    return new ResponseEntity(exceptionResponse, HttpStatus.NOT_FOUND);
+    return new ResponseEntity<>(exceptionResponse, HttpStatus.NOT_FOUND);
   }
 
   @Override
@@ -37,6 +37,6 @@ public class CustomizedResponseEntityExceptionHandler extends ResponseEntityExce
       HttpHeaders headers, HttpStatus status, WebRequest request) {
     ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), "Validation Failed",
         ex.getBindingResult().toString());
-    return new ResponseEntity(exceptionResponse, HttpStatus.BAD_REQUEST);
+    return new ResponseEntity<>(exceptionResponse, HttpStatus.BAD_REQUEST);
   } 
 }

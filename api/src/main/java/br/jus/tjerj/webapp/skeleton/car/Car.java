@@ -2,17 +2,22 @@ package br.jus.tjerj.webapp.skeleton.car;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToOne;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import br.jus.tjerj.webapp.skeleton.student.Student;
 
 @Entity
+@Table(name="SKLTN_CAR", schema = "SKELETON")
 public class Car {
 	@Id
-	@GeneratedValue
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "car_id_seq")
+    @SequenceGenerator(name="car_id_seq", sequenceName = "CAR_ID_SEQ",  allocationSize = 1)
 	private Long id;
 	
 	@NotNull

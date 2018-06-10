@@ -29,12 +29,12 @@ public class CarResource {
 	private CarRepository carRepository;
 
 	@GetMapping("/car")
-	public List<Car> retrieveAllStudents() {
+	public List<Car> retrieveAllCars() {
 		return carRepository.findAll();
 	}
 
 	@GetMapping("/car/{id}")
-	public Resource<Car> retrieveStudent(@PathVariable long id) {
+	public Resource<Car> retrieveCar(@PathVariable long id) {
 		Optional<Car> car = carRepository.findById(id);
 
 		if (!car.isPresent())
@@ -42,7 +42,7 @@ public class CarResource {
 
 		Resource<Car> resource = new Resource<Car>(car.get());
 
-		ControllerLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllStudents());
+		ControllerLinkBuilder linkTo = linkTo(methodOn(this.getClass()).retrieveAllCars());
 
 		resource.add(linkTo.withRel("all-car"));
 
@@ -50,12 +50,12 @@ public class CarResource {
 	}
 
 	@DeleteMapping("/car/{id}")
-	public void deleteStudent(@PathVariable long id) {
+	public void deleteCar(@PathVariable long id) {
 		carRepository.deleteById(id);
 	}
 
 	@PostMapping("/car")
-	public ResponseEntity<Object> createStudent(@Valid @RequestBody Car car) {
+	public ResponseEntity<Object> createCar(@Valid @RequestBody Car car) {
 		Car savedCar = carRepository.save(car);
 
 		URI location = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
@@ -66,7 +66,7 @@ public class CarResource {
 	}
 	
 	@PutMapping("/car/{id}")
-	public ResponseEntity<Object> updateStudent(@Valid @RequestBody Car car, @PathVariable long id) {
+	public ResponseEntity<Object> updateCar(@Valid @RequestBody Car car, @PathVariable long id) {
 
 		Optional<Car> carOptional = carRepository.findById(id);
 
