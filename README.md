@@ -28,3 +28,4 @@ The the goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR for
 	1. ✅ MockitoExtension
 	1. ✅ AssertJ
 1. ✅ CORS
+1. ✅ Banner.txt

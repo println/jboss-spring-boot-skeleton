@@ -38,7 +38,7 @@
 							<groupId>br.jus.tjerj.webapp</groupId>
 							<artifactId>api</artifactId>
 							<bundleFileName>api.war</bundleFileName>
-							<contextRoot>/api</contextRoot>
+							<contextRoot>/</contextRoot>
 						</webModule>
 					</modules>
 				</configuration>

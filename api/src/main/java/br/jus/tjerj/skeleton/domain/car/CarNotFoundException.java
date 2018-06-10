@@ -1,14 +1,14 @@
-package br.jus.tjerj.webapp.skeleton.student;
+package br.jus.tjerj.skeleton.domain.car;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @ResponseStatus(HttpStatus.NOT_FOUND)
-public class StudentNotFoundException extends RuntimeException {
+public class CarNotFoundException extends RuntimeException {
 
 	private static final long serialVersionUID = -2761084141068051723L;
 
-	public StudentNotFoundException(String exception) {
+	public CarNotFoundException(String exception) {
 		super(exception);
 	}
 

@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton;
+package br.jus.tjerj.skeleton;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

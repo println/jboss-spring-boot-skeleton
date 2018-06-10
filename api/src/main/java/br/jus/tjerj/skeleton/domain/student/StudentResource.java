@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.student;
+package br.jus.tjerj.skeleton.domain.student;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
@@ -28,7 +28,7 @@ public class StudentResource {
 	@Autowired
 	private StudentRepository studentRepository;
 
-	@GetMapping("/students")
+	@GetMapping("/api/students")
 	public List<Student> retrieveAllStudents() {
 		return studentRepository.findAll();
 	}

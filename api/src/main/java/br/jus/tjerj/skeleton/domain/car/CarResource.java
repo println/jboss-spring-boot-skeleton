@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.car;
+package br.jus.tjerj.skeleton.domain.car;
 
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
@@ -28,7 +28,7 @@ public class CarResource {
 	@Autowired
 	private CarRepository carRepository;
 
-	@GetMapping("/car")
+	@GetMapping("/api/car")
 	public List<Car> retrieveAllCars() {
 		return carRepository.findAll();
 	}

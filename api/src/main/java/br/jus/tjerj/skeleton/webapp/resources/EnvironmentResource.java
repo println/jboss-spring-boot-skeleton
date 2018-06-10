@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.environment;
+package br.jus.tjerj.skeleton.webapp.resources;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.web.bind.annotation.GetMapping;

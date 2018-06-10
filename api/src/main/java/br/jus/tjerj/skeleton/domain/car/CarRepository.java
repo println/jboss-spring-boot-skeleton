@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.car;
+package br.jus.tjerj.skeleton.domain.car;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

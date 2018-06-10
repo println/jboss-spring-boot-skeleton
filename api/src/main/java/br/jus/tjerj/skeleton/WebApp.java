@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp;
+package br.jus.tjerj.skeleton;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

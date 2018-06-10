@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.exception;
+package br.jus.tjerj.skeleton.webapp.exception;
 import java.util.Date;
 
 public class ExceptionResponse {

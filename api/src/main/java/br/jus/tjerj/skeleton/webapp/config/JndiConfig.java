@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.config;
+package br.jus.tjerj.skeleton.webapp.config;
 
 import javax.sql.DataSource;
 

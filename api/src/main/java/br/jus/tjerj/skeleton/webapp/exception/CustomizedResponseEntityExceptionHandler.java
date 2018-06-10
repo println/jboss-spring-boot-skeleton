@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.exception;
+package br.jus.tjerj.skeleton.webapp.exception;
 import java.util.Date;
 
 import org.springframework.http.HttpHeaders;
@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import br.jus.tjerj.webapp.skeleton.student.StudentNotFoundException;
+import br.jus.tjerj.skeleton.domain.student.StudentNotFoundException;
 
 
 @ControllerAdvice

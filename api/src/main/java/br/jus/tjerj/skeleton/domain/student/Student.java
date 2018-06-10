@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.skeleton.student;
+package br.jus.tjerj.skeleton.domain.student;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package br.jus.tjerj.webapp.config;
+package br.jus.tjerj.skeleton.webapp.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
