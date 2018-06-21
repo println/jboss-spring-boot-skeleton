@@ -44,5 +44,5 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 	1. ❌ Service
 1. ❌ Exception
 1. ❌ Response
-1. ❌ Pagination
+	1. ❌ Pagination
 	
