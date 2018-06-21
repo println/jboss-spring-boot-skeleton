@@ -31,3 +31,17 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 	1. ✅ AssertJ
 1. ⚠ CORS
 1. ✅ Banner.txt
+
+### TJ CUSTOM FEATURES
+
+1. ❌ Abstract
+	1. ❌ Model
+	1. ❌ Repository
+	1. ❌ Controller
+	1. ❌ Business
+		1. ❌ Validators
+		1. ❌ Actuators
+	1. ❌ Service
+1. ❌ Exception
+1. ❌ Response
+	
