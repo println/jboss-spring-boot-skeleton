@@ -34,7 +34,7 @@ public class JwtExceptionHandler extends OncePerRequestFilter {
 		} 
 	}
 
-	private void handler(String message, Class<?> clazz, HttpServletResponse response) throws IOException {
+	private void handle(String message, Class<?> clazz, HttpServletResponse response) throws IOException {
 		ExceptionResponse exceptionResponse = new ExceptionResponse(new Date(), message,
 				clazz.getSimpleName());
 		String json = new ObjectMapper().writeValueAsString(exceptionResponse);
@@ -44,10 +44,10 @@ public class JwtExceptionHandler extends OncePerRequestFilter {
 	}
 	
 	private final void handleMalformedJwtException(MalformedJwtException ex, HttpServletResponse response) throws IOException {
-		this.handler("Token JWT incorreto.", ex.getClass() , response);
+		this.handle("Token JWT incorreto.", ex.getClass() , response);
 	}
 
 	private final void handleJwtException(JwtException ex, HttpServletResponse response) throws IOException {
-		this.handler("Error no JWT.", ex.getClass() , response);
+		this.handle("Error no JWT.", ex.getClass() , response);
 	}
 }
