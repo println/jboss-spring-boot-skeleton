@@ -20,26 +20,21 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Autowired
     private SegwebAuthenticationProvider authProvider;
 	
-  @Override
-  protected void configure(HttpSecurity http) throws Exception {
-    http.csrf().disable().authorizeRequests()
-        .antMatchers("/").permitAll()
-        .antMatchers(HttpMethod.POST, "/login").permitAll()
-        .anyRequest().authenticated()
-        .and()
-        .addFilterBefore(new JwtAuthenticationFilter("/login", authenticationManager()),
-                UsernamePasswordAuthenticationFilter.class)        
-        .addFilterBefore(new JwtAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
-    	.addFilterBefore(new JwtExceptionHandler(), JwtAuthenticationFilter.class);
-  }
-
-  @Override
-  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-    // Create a default account
-	  auth.authenticationProvider(authProvider);
-//    auth.inMemoryAuthentication()
-//        .withUser("admin")
-//        .password("{noop}password")
-//        .roles("ADMIN");
-  }
+	  @Override
+	  protected void configure(HttpSecurity http) throws Exception {
+	    http.csrf().disable().authorizeRequests()
+	        .antMatchers("/").permitAll()
+	        .antMatchers(HttpMethod.POST, "/login").permitAll()
+	        .anyRequest().authenticated()
+	        .and()
+	        .addFilterBefore(new JwtAuthenticationFilter("/login", authenticationManager()),
+	                UsernamePasswordAuthenticationFilter.class)        
+	        .addFilterBefore(new JwtAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
+	    	.addFilterBefore(new JwtExceptionHandler(), JwtAuthenticationFilter.class);
+	  }
+	
+	  @Override
+	  protected void configure(AuthenticationManagerBuilder auth) throws Exception {
+		  auth.authenticationProvider(authProvider);
+	  }
 }

@@ -24,15 +24,19 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 		1. ⚠ Oracle Driver
 		1. ✅ JBoss' configurations		
 		1. ❌ Maven's profile PROD
-1. ✅ JUnit 5
-	1. ✅ SpringExtension + Eclipse Runner
-	1. ✅ SpringExtension + Maven Runner
-	1. ✅ MockitoExtension
+1. ✅ Testes
+	1. ✅ JUnit 5
+		1. ✅ SpringExtension + Eclipse Runner
+		1. ✅ SpringExtension + Maven Runner
+		1. ✅ MockitoExtension
 	1. ✅ AssertJ
+	1. ❌ Wiremock
+	1. ❌ Pasta para teste de sistema
+	1. ❌ Pasta para teste de integracao/unidade
 1. ⚠ CORS
 1. ✅ Banner.txt
 1. ⚠ Spring Security
-	1. ✅ SegwebAuthenticationProvider(externo)
+	1. ✅ Segweb Authentication Provider(externo)
 	1. ⚠ JWT
 		1. ❌ Exceptions
 
