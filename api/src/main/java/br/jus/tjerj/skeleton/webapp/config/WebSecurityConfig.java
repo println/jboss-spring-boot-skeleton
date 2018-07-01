@@ -1,5 +1,6 @@
 package br.jus.tjerj.skeleton.webapp.config;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.authentication.builders.AuthenticationManagerBuilder;
@@ -9,12 +10,16 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 import br.jus.tjerj.skeleton.webapp.auth.JwtAuthorizationFilter;
+import br.jus.tjerj.skeleton.webapp.auth.segweb.SegwebAuthenticationProvider;
 import br.jus.tjerj.skeleton.webapp.handlers.JwtExceptionHandler;
 import br.jus.tjerj.skeleton.webapp.auth.JwtAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+	@Autowired
+    private SegwebAuthenticationProvider authProvider;
+	
   @Override
   protected void configure(HttpSecurity http) throws Exception {
     http.csrf().disable().authorizeRequests()
@@ -31,9 +36,10 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
   @Override
   protected void configure(AuthenticationManagerBuilder auth) throws Exception {
     // Create a default account
-    auth.inMemoryAuthentication()
-        .withUser("admin")
-        .password("{noop}password")
-        .roles("ADMIN");
+	  auth.authenticationProvider(authProvider);
+//    auth.inMemoryAuthentication()
+//        .withUser("admin")
+//        .password("{noop}password")
+//        .roles("ADMIN");
   }
 }

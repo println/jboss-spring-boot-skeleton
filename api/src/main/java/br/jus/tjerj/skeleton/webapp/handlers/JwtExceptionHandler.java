@@ -31,6 +31,8 @@ public class JwtExceptionHandler extends OncePerRequestFilter {
 		} 	
 		catch (JwtException ex) {
 			this.handleJwtException(ex, response);
+		}catch(Exception ex) {
+			this.handleException(ex, response);
 		} 
 	}
 
@@ -48,6 +50,10 @@ public class JwtExceptionHandler extends OncePerRequestFilter {
 	}
 
 	private final void handleJwtException(JwtException ex, HttpServletResponse response) throws IOException {
-		this.handle("Error no JWT.", ex.getClass() , response);
+		this.handle("Erro no JWT.", ex.getClass() , response);
+	}
+	
+	private final void handleException(Exception ex, HttpServletResponse response) throws IOException {
+		this.handle("Erro.", ex.getClass() , response);
 	}
 }
