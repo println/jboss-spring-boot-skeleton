@@ -35,10 +35,13 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 	1. ❌ Pasta para teste de integracao/unidade
 1. ⚠ CORS
 1. ✅ Banner.txt
+1. ❌ Sistema de templates(Thymeleaf)
+	1. ❌ Email
 1. ⚠ Spring Security
 	1. ✅ Segweb Authentication Provider(externo)
 	1. ⚠ JWT
 		1. ❌ Exceptions
+		
 
 ### TJ CUSTOM FEATURES
 
@@ -53,8 +56,9 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 1. ❌ Exception
 1. ❌ Response
 	1. ❌ Pagination
-1. ❌ GED
-1. ⚠ SEGWEB
-	1. ⚠ Autenticação
-	1. ❌ Renovacao
+1. ❌ Envio de arquivos (GED)
+1. ❌ Envio de Email
+1. ⚠ Seguranca (SEGWEB)
+	1. ⚠ Obter lista de permissões
+	1. ❌ Renovacao da sessão
 	
