@@ -7,6 +7,8 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 1. ✅ Integration to JBoss EAP 7.0.0.GA (WildFly Core 2.1.2.Final-redhat-1)
 	1. ✅ DataSources
 	1. ✅ System Properties
+	1. ✅ Email
+	1. ❌ Quartz
 1. ❌ Legacy EJB	
 1. ✅ Multiple SQL files
 1. ✅ Simulate Oracle DB on H2(memory)
