@@ -35,11 +35,11 @@ public class JbossConfig {
 	@ConditionalOnJndi
 	public JavaMailSender jbossEmailSession() throws NamingException {
 		JndiTemplate template = new JndiTemplate();
-		Session mailSession = (Session) template.lookup("java:jboss/mail/Default");
+		Session session = (Session) template.lookup("java:jboss/mail/Default");
 		LOGGER.info(TITLE + "[Email Session] java:jboss/mail/Default");
 
-		JavaMailSenderImpl mailSenderImpl = new JavaMailSenderImpl();
-		mailSenderImpl.setSession(mailSession);
-		return mailSenderImpl;
+		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
+		mailSender.setSession(session);
+		return mailSender;
 	}
 }
