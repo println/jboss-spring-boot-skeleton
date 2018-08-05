@@ -1,6 +1,5 @@
 package br.jus.tjerj.skeleton.support.email;
 
-import javax.mail.MessagingException;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
