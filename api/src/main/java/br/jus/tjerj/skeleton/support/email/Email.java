@@ -9,6 +9,9 @@ import javax.mail.internet.InternetAddress;
 import org.springframework.http.MediaType;
 
 public class Email {
+
+	private static final String CHARSET_FIELD = ";charset=" + EmailService.CHARSET;
+
 	private String to;
 	private String from;
 	private String subject;
@@ -17,8 +20,6 @@ public class Email {
 	private List<String> cc;
 	private List<String> bcc;
 	private List<String> replyTo;
-
-	private static final String CHARSET_FIELD = ";charset=" + EmailService.CHARSET;
 
 	public Email(String to, String from, String subject, String content, MediaType type) {
 		this.to = to;

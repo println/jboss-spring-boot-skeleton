@@ -15,7 +15,9 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmailService {
+
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmailService.class);
+
 	static final String CHARSET = StandardCharsets.UTF_8.name();
 
 	@Autowired

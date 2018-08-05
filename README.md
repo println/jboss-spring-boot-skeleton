@@ -11,7 +11,8 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 1. ✅ Multiple SQL files
 1. ✅ Simulate Oracle DB on H2(memory)
     1. ✅ Support to SEQUENCE
-    1. ✅ Support to SCHEME	
+    1. ✅ Support to SCHEME
+	1. ❌ Support to TRIGGER
 1. ❌ DEV and PROD environment
     1. ❌ DEV
 		1. ✅ application-dev.properties
