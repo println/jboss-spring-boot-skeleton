@@ -25,7 +25,7 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 		1. ⚠ Oracle Driver
 		1. ✅ JBoss' configurations		
 		1. ❌ Maven's profile PROD
-		1. ✅ Jboss Email
+		1. ✅ Jboss(JNDI) Spring Email
 1. ✅ Testes
 	1. ✅ JUnit 5
 		1. ✅ SpringExtension + Eclipse Runner
