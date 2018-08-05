@@ -67,3 +67,7 @@ The goal of the Skeleton is to deploy an Spring-Boot-Application 2+ (WAR format)
 	1. ⚠ Obter lista de permissões
 	1. ❌ Renovacao da sessão
 	
+	
+### Definicões
+
+1. ❌ Json de componentes complexos	
