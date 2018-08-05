@@ -4,8 +4,8 @@ import org.springframework.http.MediaType;
 
 public class HtmlEmail extends Email {
 
-	public HtmlEmail(String to, String from, String subject, String message) {
-		super(to, from, subject, message, MediaType.TEXT_HTML);
+	public HtmlEmail(String to, String from, String subject, String content) {
+		super(to, from, subject, content, MediaType.TEXT_HTML);
 	}
 
 }
