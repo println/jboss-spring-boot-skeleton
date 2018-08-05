@@ -7,9 +7,9 @@ import org.junit.jupiter.api.Test;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import br.jus.tjerj.skeleton.webapp.auth.segweb.SegwebCredentials;
-import br.jus.tjerj.skeleton.webapp.auth.segweb.SegwebToken;
-import br.jus.tjerj.skeleton.webapp.auth.segweb.SegwebUser;
+import br.jus.tjerj.skeleton.support.segweb.SegwebCredentials;
+import br.jus.tjerj.skeleton.support.segweb.SegwebToken;
+import br.jus.tjerj.skeleton.support.segweb.SegwebUser;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 

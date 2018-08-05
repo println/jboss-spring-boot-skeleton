@@ -28,7 +28,7 @@ class SpringExtensionTests {
 	@Test
 	@Tag("Example")
 	public void testMessage() {
-		String message = this.restTemplate.getForObject("/environment", String.class);
+		String message = this.restTemplate.getForObject("/server/environment", String.class);
 		assertThat(message).contains("spring-boot");
 	}
 

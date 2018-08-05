@@ -10,6 +10,10 @@ import org.junit.jupiter.api.Test;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import br.jus.tjerj.skeleton.support.segweb.SegwebCredentials;
+import br.jus.tjerj.skeleton.support.segweb.SegwebToken;
+import br.jus.tjerj.skeleton.support.segweb.SegwebUser;
+
 class SegwebTokenTest {
 	
 	private static String JSON = "{\"user\":{\"name\":\"name\",\"lastName\":\"lastname\"},\"credentials\":{\"code\":\"code\",\"system\":\"system\",\"token\":\"token\"}}";
